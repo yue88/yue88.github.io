@@ -344,6 +344,88 @@ main h3{
     font-size: 0.95rem;
 }
 
+
+/* === Section Contact === */
+.contact-section {
+    position: relative;
+    margin: 4rem auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 2rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+    color: #fff;
+    font-family: sans-serif;
+    z-index: 1;
+  }
+  
+  /* Titre */
+  .contact-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #E6E6FA;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+  }
+  
+  /* Formulaire */
+  .contact-form .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid rgba(230,230,250,0.6);
+    border-radius: 6px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: rgba(255,255,255,0.6);
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #E6E6FA;
+  }
+  
+  /* Bouton */
+  .contact-form button {
+    display: block;
+    margin: 1.5rem auto 0;
+    padding: 0.7rem 2rem;
+    background: #E6E6FA;
+    color: #111;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .contact-form button:hover {
+    background: rgba(230,230,250,0.8);
+    transform: translateY(-2px);
+  }
+  
 /*--------------------------------------footer--------------------------------------*/
 
 footer {
