@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+    position: relative;
+    z-index: 10;
+    color: #E6E6FA;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    padding: 40px;
+    padding-left: 60px;
+}
+
+  
+.title {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+  
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+}
+
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    will-change: transform;
+}
+
+.explications{
+    border: solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    font-size: 1.5rem;
+    backdrop-filter: blur(6px);
+}
+
+object{
+    z-index: 1;
+    height: 700px;
+    margin: 50px;
+}
+                    

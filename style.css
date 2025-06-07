@@ -1,4 +1,3 @@
-/* Corps de page scrollable */
 body {
     margin: 0;
     display: flex;
@@ -9,7 +8,7 @@ body {
     color: #E6E6FA;
     font-family: sans-serif;
     overflow-x: hidden;
-  }
+}
 
 #starfield {
     position: fixed;
@@ -124,7 +123,18 @@ main {
 
 main h1{
     font-size: 4.5rem ;
-    margin-top: 80px;
+    margin-top: 250px;
+}
+
+main h2{
+    margin-bottom: 250px;
+}
+
+main h3{
+    display: flex;
+    margin-left: 20%;
+    font-size: 4rem;
+    justify-content: left;
 }
 
 #projects.projects-flex {
@@ -132,14 +142,15 @@ main h1{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    padding: 20px;
+    padding: 200px;
+    padding-top: 30px;
 }
 .project-box {
+    flex-wrap: wrap;
     position: relative;
     overflow: hidden;
-    flex: 1 1 calc(33.333% - 20px);
     height: 350px;
-    max-width: calc(33.333% - 20px);
+    width: 350px;
     background: #111;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
@@ -154,7 +165,7 @@ main h1{
 .project-box img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
   
@@ -180,7 +191,158 @@ main h1{
     text-align: center;
 }
   
+.page-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('votre-background.jpg') center/cover no-repeat;
+    z-index: -2;
+  }
+  
+  /* === Titre de section === */
+.section-title {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  /* === Conteneur frosted-glass === */
+.about-container {
+    position: relative;
+    margin: 0 auto 3rem;
+    width: 90%; 
+    max-width: 840px;
+    padding: 3rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 1.5rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    color: #fff;
+    font-family: sans-serif;
+    z-index: 1;
+}
 
+.profile-img {
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255,255,255,0.8);
+}
+
+  .box {
+    background: rgba(0,0,0,0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    line-height: 1.4;
+  }
+  .box h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    padding-bottom: 0.25rem;
+  }
+  
+  /* === Placement dans la grille === */
+  .contact-box   { grid-column: 1; grid-row: 1; }
+  .network-box   { grid-column: 2; grid-row: 1; }
+  .education-box { grid-column: 1; grid-row: 2; }
+  .lang-box      { grid-column: 2; grid-row: 2; }
+  
+  /* === Boîte Contact (texte simple) === */
+  .contact-box p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+  }
+  
+  /* === Boîte Réseaux (icônes + liens) === */
+  .network-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .network-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+  .network-list li:last-child {
+    margin-bottom: 0;
+  }
+  .net-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    /* recoloration optionnelle en lavande */
+    filter: brightness(0) saturate(100%) invert(90%) sepia(12%) saturate(146%) hue-rotate(236deg);
+  }
+  .network-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  /* === Boîte Parcours (timeline) === */
+  .education-box .timeline {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 1.5rem;
+  }
+  .education-box .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 2px;
+    height: 100%;
+    background: #E6E6FA;
+  }
+.education-box .timeline li {
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.education-box .timeline li:last-child {
+    margin-bottom: 0;
+}
+.education-box .timeline .dot {
+    position: absolute;
+    left: 1px;
+    width: 12px;
+    height: 12px;
+    background: #E6E6FA;
+    border-radius: 50%;
+}
+.education-box .timeline .label {
+    margin-left: 1.2rem;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+
+  
+.lang-box ul {
+    list-style: disc inside;
+    margin: 0.5rem 0 0 1rem;
+    padding: 0;
+}
+.lang-box li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
 
 /*--------------------------------------footer--------------------------------------*/
 
