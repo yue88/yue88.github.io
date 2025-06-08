@@ -132,7 +132,7 @@ main h2{
 
 main h3{
     display: flex;
-    margin-left: 20%;
+    margin-left: 15%;
     font-size: 4rem;
     justify-content: left;
 }
@@ -200,7 +200,7 @@ main h3{
     z-index: -2;
   }
   
-  /* === Titre de section === */
+
 .section-title {
     text-align: center;
     margin: 2rem 0 1rem;
@@ -208,7 +208,7 @@ main h3{
     font-family: sans-serif;
   }
   
-  /* === Conteneur frosted-glass === */
+
 .about-container {
     position: relative;
     margin: 0 auto 3rem;
@@ -232,7 +232,7 @@ main h3{
 .profile-img {
     position: absolute;
     top: -30px;
-    left: -20px;
+    left: -30px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -253,19 +253,17 @@ main h3{
     padding-bottom: 0.25rem;
   }
   
-  /* === Placement dans la grille === */
+
   .contact-box   { grid-column: 1; grid-row: 1; }
   .network-box   { grid-column: 2; grid-row: 1; }
   .education-box { grid-column: 1; grid-row: 2; }
   .lang-box      { grid-column: 2; grid-row: 2; }
-  
-  /* === Boîte Contact (texte simple) === */
+
   .contact-box p {
     margin: 0.4rem 0;
     font-size: 0.95rem;
   }
-  
-  /* === Boîte Réseaux (icônes + liens) === */
+
   .network-list {
     list-style: none;
     margin: 0;
@@ -283,7 +281,6 @@ main h3{
     width: 20px;
     height: 20px;
     margin-right: 0.5rem;
-    /* recoloration optionnelle en lavande */
     filter: brightness(0) saturate(100%) invert(90%) sepia(12%) saturate(146%) hue-rotate(236deg);
   }
   .network-list a {
@@ -291,8 +288,7 @@ main h3{
     text-decoration: none;
     font-size: 0.95rem;
   }
-  
-  /* === Boîte Parcours (timeline) === */
+
   .education-box .timeline {
     position: relative;
     list-style: none;
@@ -332,20 +328,24 @@ main h3{
     font-size: 0.95rem;
 }
 
+.lang-box div{
+  display: flex;
+  flex-direction: column;
+}
 
-  
 .lang-box ul {
     list-style: disc inside;
-    margin: 0.5rem 0 0 1rem;
     padding: 0;
+
 }
 .lang-box li {
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
+  margin-left: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
 }
 
 
-/* === Section Contact === */
 .contact-section {
     position: relative;
     margin: 4rem auto;
@@ -362,7 +362,6 @@ main h3{
     z-index: 1;
   }
   
-  /* Titre */
   .contact-section h2 {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -372,7 +371,7 @@ main h3{
     padding-bottom: 0.25rem;
   }
   
-  /* Formulaire */
+
   .contact-form .form-group {
     margin-bottom: 1.2rem;
   }
@@ -407,7 +406,6 @@ main h3{
     border-color: #E6E6FA;
   }
   
-  /* Bouton */
   .contact-form button {
     display: block;
     margin: 1.5rem auto 0;
