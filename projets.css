@@ -105,6 +105,8 @@ nav a:hover{
     animation: animate 5s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    margin: 40px;
+    margin-top: 150px;
 }
   
 @keyframes animate {
@@ -127,7 +129,6 @@ nav a:hover{
 }
 
 .explications{
-    border: solid 2px rgba(255, 255, 255, 0.4);
     border-radius: 30px;
     padding: 10px 40px;
     display: flex;
